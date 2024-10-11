@@ -21,10 +21,10 @@ const NavBar = ({handleShowMessage})=>{
             <nav className={styles.nav} >
                 <ul className={styles.ul}>
                     <li className={styles.li}>
-                       <Link className={styles.link} to="/Music-Player/">Search</Link>
+                       <Link className={styles.link} to="/">Search</Link>
                     </li>
                     <li className={styles.li}>
-                        <Link className={styles.link} to="/Music-Player/Playlist">Playlist</Link>
+                        <Link className={styles.link} to="/Playlist">Playlist</Link>
                     </li>
                 </ul>
             </nav>
