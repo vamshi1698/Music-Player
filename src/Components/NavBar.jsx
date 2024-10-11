@@ -21,16 +21,16 @@ const NavBar = ({handleShowMessage})=>{
             <nav className={styles.nav} >
                 <ul className={styles.ul}>
                     <li className={styles.li}>
-                       <Link className={styles.link} to="/">Search</Link>
+                       <Link className={styles.link} to="/Music-Player">Search</Link>
                     </li>
                     <li className={styles.li}>
-                        <Link className={styles.link} to="/Playlist">Playlist</Link>
+                        <Link className={styles.link} to="/Music-Player/Playlist">Playlist</Link>
                     </li>
                 </ul>
             </nav>
             <Routes>
-                <Route path="/"  element={<Search  handleShowMessage={handleShowMessage} updateUrl={updateUrl} setCurrSong={setCurrSong} />} />
-                <Route path="/Playlist"  element={<Playlist handleShowMessage={handleShowMessage} updateUrl={updateUrl} setCurrSong={setCurrSong} />} />
+                <Route path="/Music-Player/"  element={<Search  handleShowMessage={handleShowMessage} updateUrl={updateUrl} setCurrSong={setCurrSong} />} />
+                <Route path="/Music-Player/Playlist/"  element={<Playlist handleShowMessage={handleShowMessage} updateUrl={updateUrl} setCurrSong={setCurrSong} />} />
             </Routes>
            </Router>
             <PopSong song={currSong} />

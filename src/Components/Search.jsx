@@ -10,6 +10,7 @@ export const Search = ({handleShowMessage , setCurrSong,updateUrl})=>{
       return savedSongs ? JSON.parse(savedSongs): [];
     })
     const fetchToken = async () => {
+        console.log(import.meta.env.REACT_APP_CLIENT_ID)
         const authOptions = {
           method: 'POST',
           headers: {
