@@ -1,0 +1,33 @@
+*{
+    text-align: center;
+}
+.nav{
+    all:unset;
+    position: sticky;
+    top: 0;
+    display: flex;
+    z-index: 999;    
+    flex: 1;
+    margin-bottom: 1dvh;
+    filter: blur(10%);
+    background-color: grey;
+}
+
+.ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex: 1;
+    border: 1px solid black;
+    
+}
+.ul > .li{ 
+    all:unset;
+    gap: 10px;
+}
+.ul .link{
+    flex: 1;
+    all: unset;
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 1.5rem;
+}

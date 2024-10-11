@@ -1,0 +1,87 @@
+.fullComponent{
+    position: fixed;
+    width: 100%;
+    bottom: 1%;
+    z-index: 1000;
+}
+.container{
+    position: relative;
+    font-family: Lato;
+    font-weight: 800;
+    display: flex;
+    flex:1;
+    justify-content: flex-start;
+    border: 0px solid rgb(4, 76, 41);
+    padding: 0px 15% 0px 0 ;
+    background: linear-gradient(to left,rgb(189, 192, 0),rgb(24, 177, 159));
+    border-radius: 25px;
+    overflow: hidden;
+}
+.container > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.songImage{
+    width: 70px;
+    object-fit: contain;
+    z-index: 10;
+}
+.icons{    
+    background: transparent;
+    position: absolute;
+    z-index: 3;
+    left: 90%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    align-items:center;
+    gap: 1rem;
+}
+.icons i {
+    font-size: 1.5rem;
+
+}
+.range{
+    display: flex;
+    flex: 1;
+    background: transparent;
+    margin: 0px 25px;
+}
+.range > input{
+    flex: 1;
+}
+.songName{
+    position: absolute;
+    display: flex;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.songName > div {
+    display: block;
+    text-align:start;
+    flex: 1;
+    height: 100;
+}
+.slideAnimation{
+    animation: slideText 6s linear infinite ;
+}
+@keyframes slideText {
+    0%{
+        transform: translatex(50%);
+    }   
+    100%{
+        transform: translatex(-50%);
+    }
+}
+@media only screen and (min-width:600px) {
+    .songName{
+        width: 70%;
+    }
+    .songName > div{
+        text-align: center;
+    }
+}
