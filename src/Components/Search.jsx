@@ -56,8 +56,8 @@ export const Search = ({handleShowMessage , setCurrSong,updateUrl})=>{
     return(
       <div  className={styles.searchContainer}>
         <form className={styles.searchDiv} onSubmit={(e)=>e.preventDefault()} >
-          <input name="input"  type="text" value={inputValue} onChange={(e)=>setInputValue(e.target.value)} className={styles.input} />
-          <button className={styles.searchButton} onClick={searchTrack} >SUBMIT</button>
+          <input name="input"  placeholder="Search for a Song" type="text" value={inputValue} onChange={(e)=>setInputValue(e.target.value)} className={styles.input} />
+          <button className={styles.searchButton} onClick={searchTrack} >Search</button>
         </form>
         
         <div className={styles.songList} >

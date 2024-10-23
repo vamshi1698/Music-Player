@@ -4,7 +4,6 @@
     flex:1;
     justify-content: flex-start;
     align-items: center;
-    font-weight: 700;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 1rem;
@@ -20,6 +19,19 @@
     margin-left: 1rem;
 }
 .songImage{
+    border-radius: 8px;
     width: 70px;
     object-fit: contain;
+}
+.innerDiv > *{
+    color: aliceblue !important;
+    opacity: 0.8;
+}
+.innerDiv > p:nth-child(1){
+    font-weight: 900;
+    color: rgb(85, 230, 230) !important;
+}
+.icon{
+    color: #fff;
+    opacity: 0.8;
 }

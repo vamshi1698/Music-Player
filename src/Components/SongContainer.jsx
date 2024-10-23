@@ -39,8 +39,8 @@ export const SongContainer = ({handleShowMessage,song,updateUrl,playlist,setPlay
           <div className={styles.mainDiv} onClick={()=>updateUrl(song)} >
             <img className={styles.songImage} src={song.album.images[0].url} />             
             <div className={styles.innerDiv} >
-                <p>Song : {song.name}</p>
-                <p>Artist : {song.artists[0].name}</p>
+                <p> {song.name}</p>
+                <p> {song.artists[0].name}</p>
             </div>
             <i className={ `fa-solid ${isStored?"fa-minus":"fa-plus"}  ${styles.icon}`} onClick={toggeIsStored}  ></i>
           </div>          

@@ -9,25 +9,24 @@
     z-index: 999;    
     flex: 1;
     margin-bottom: 1dvh;
+    padding-top: 10px;
     filter: blur(10%);
-    background-color: grey;
+    background-color: rgba(9, 9, 9,0.5);
 }
 
 .ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    flex: 1;
-    border: 1px solid black;
-    
+    flex: 1;    
 }
 .ul > .li{ 
     all:unset;
     gap: 10px;
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: Poppins;
 }
 .ul .link{
-    flex: 1;
     all: unset;
-    font-family: Poppins;
-    font-weight: 800;
-    font-size: 1.5rem;
 }

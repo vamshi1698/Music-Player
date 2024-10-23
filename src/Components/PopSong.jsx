@@ -6,9 +6,6 @@ export const PopSong = ({song})=>{
     const [duration,setDuration] = useState(0)
     const [isPlaying,setIsPlaying] = useState(true)
     const [isClicked,setIsClicked] = useState(false)
-    const fullComponent = {
-
-    }
     const setToFullScreen = ()=>{
       setIsClicked(prev=>!prev)
       if(isClicked){
@@ -60,7 +57,7 @@ export const PopSong = ({song})=>{
         <div className={styles.container} >
             <img className={styles.songImage} src={song.album.images[0].url} />             
             <div className={styles.songName} >
-            <div>
+            <div className={styles.textDiv}>
                <p className={isPlaying?styles.slideAnimation:""} >Song : {song.name}</p>
                <p className={isPlaying?styles.slideAnimation:""}>Artist : {song.artists[0].name}{song.artists[1]?","+song.artists[1].name:""}</p>
              </div>            

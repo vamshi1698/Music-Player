@@ -3,24 +3,28 @@
     border-radius: 10px 0px 0px 10px ;
     outline: none;
     min-height: 2rem;
-    background: linear-gradient(to right,rgba(19, 170, 100, 0.1),rgba(162, 66, 149, 0.1));
+    color: rgb(200, 229, 255);
+    background-color: #302f2f;
+}
+.input:focus{
+    color: rgb(199, 207, 213);
 }
 
 .searchDiv{
-    padding: 2dvh 2dvw;
+    padding: 1dvh 1dvw;
     display: grid;
     background: rgba(255,255,255,0.1);
     border: 1px solid rgba(0,0,0,0.5);
     grid-template-columns: 3fr 1fr;
     border-radius: 10px ;
     position: sticky;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
-    margin: 1rem 0rem;    
 }
 .searchButton{
+    opacity: 0.5;
     border-radius: 0px 10px 10px 0px;
+    background-color: #302f2f;
+    color: aliceblue;
     border: 1px solid rgba(0,0,0,0.5);
-    background: linear-gradient(to right,rgba(19, 170, 100, 0.1),rgba(162, 66, 149, 0.1));
 }
 .searchContainer{
     position: relative;
